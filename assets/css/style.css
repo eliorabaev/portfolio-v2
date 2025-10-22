@@ -336,6 +336,8 @@ main {
   border-radius: 20px;
 }
 
+.avatar-box img { border-radius: 20px; }
+
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
@@ -582,6 +584,7 @@ main {
   min-width: 100%;
   scroll-snap-align: center;
 }
+
 
 .testimonials-avatar-box {
   position: absolute;
