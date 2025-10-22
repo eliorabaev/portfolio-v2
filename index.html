@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elior Abaev - Assistant  & Full Stack Developer</title>
+  <title>Elior Abaev - Assistant Product Manager & Full Stack Developer</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="./assets/css/style.css">
   
   <style>
-    /* Email copy cursor */
+
+    /* Email Copy Styles */
     .email-copy-btn {
       cursor: pointer;
       position: relative;
+      transition: color 0.3s ease;
     }
-    
     .email-copy-btn:hover {
       color: var(--orange-yellow-crayola);
     }
     
-    /* Copy notification */
     .copy-notification {
       position: fixed;
       bottom: 20px;
@@ -39,17 +39,241 @@
     }
     
     @keyframes slideIn {
-      from {
-        transform: translateX(400px);
-        opacity: 0;
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
+      from { transform: translateX(400px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
     }
     
-    /* Skills Table Styles */
+    /* Achievements Section */
+    .achievements-section {
+      margin: 30px 0;
+      padding: 25px;
+      background: var(--border-gradient-onyx);
+      border-radius: 16px;
+      position: relative;
+    }
+    
+    .achievements-section::before {
+      content: "";
+      position: absolute;
+      inset: 1px;
+      background: var(--bg-gradient-jet);
+      border-radius: inherit;
+      z-index: -1;
+    }
+    
+    .achievements-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--orange-yellow-crayola);
+      font-size: var(--fs-3);
+      font-weight: var(--fw-600);
+      margin-bottom: 20px;
+    }
+    
+    .achievements-title ion-icon {
+      font-size: 28px;
+    }
+    
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    
+    .achievement-card {
+      padding: 20px;
+      background: var(--eerie-black-1);
+      border-radius: 12px;
+      border: 1px solid var(--jet);
+    }
+    
+    .achievement-number {
+      font-size: 32px;
+      font-weight: var(--fw-700);
+      background: var(--text-gradient-yellow);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+    
+    .achievement-label {
+      color: var(--light-gray);
+      font-size: var(--fs-6);
+      line-height: 1.5;
+    }
+    
+    /* Journey Timeline */
+    .journey-section {
+      margin: 30px 0;
+    }
+    
+    .journey-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--white-2);
+      font-size: var(--fs-3);
+      font-weight: var(--fw-600);
+      margin-bottom: 25px;
+    }
+    
+    .journey-title ion-icon {
+      font-size: 28px;
+      color: var(--orange-yellow-crayola);
+    }
+    
+    .journey-card {
+      padding: 25px;
+      background: var(--border-gradient-onyx);
+      border-radius: 16px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    
+    .journey-card::before {
+      content: "";
+      position: absolute;
+      inset: 1px;
+      background: var(--bg-gradient-jet);
+      border-radius: inherit;
+      z-index: -1;
+    }
+    
+    .journey-phase {
+      color: var(--orange-yellow-crayola);
+      font-size: var(--fs-7);
+      text-transform: uppercase;
+      font-weight: var(--fw-600);
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    
+    .journey-content h4 {
+      color: var(--white-2);
+      font-size: var(--fs-4);
+      margin-bottom: 10px;
+    }
+    
+    .journey-content p {
+      color: var(--light-gray);
+      font-size: var(--fs-6);
+      line-height: 1.7;
+    }
+    
+    /* Enhanced Company Cards */
+    .company-showcase {
+      margin: 35px 0;
+    }
+    
+    .company-showcase-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--white-2);
+      font-size: var(--fs-3);
+      font-weight: var(--fw-600);
+      margin-bottom: 25px;
+    }
+    
+    .company-showcase-title ion-icon {
+      font-size: 28px;
+      color: var(--orange-yellow-crayola);
+    }
+    
+    .company-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    
+    .company-card {
+      position: relative;
+      background: var(--border-gradient-onyx);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .company-card::before {
+      content: "";
+      position: absolute;
+      inset: 1px;
+      background: var(--bg-gradient-jet);
+      border-radius: inherit;
+      z-index: 0;
+    }
+    
+    .company-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(255, 193, 7, 0.2);
+    }
+    
+    .company-card-content {
+      position: relative;
+      z-index: 1;
+      padding: 30px;
+      text-align: center;
+    }
+    
+    .company-icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px;
+      background: var(--bg-gradient-yellow-1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      color: var(--white-2);
+      font-weight: var(--fw-700);
+    }
+    
+    .company-name {
+      color: var(--white-2);
+      font-size: var(--fs-4);
+      font-weight: var(--fw-600);
+      margin-bottom: 10px;
+    }
+    
+    .company-role {
+      color: var(--orange-yellow-crayola);
+      font-size: var(--fs-7);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+    
+    .company-description {
+      color: var(--light-gray);
+      font-size: var(--fs-7);
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    
+    .company-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--orange-yellow-crayola);
+      font-size: var(--fs-7);
+      font-weight: var(--fw-500);
+      text-decoration: none;
+      transition: gap 0.3s ease;
+    }
+    
+    .company-link:hover {
+      gap: 12px;
+    }
+    
+    .company-link ion-icon {
+      font-size: 18px;
+    }
+    
+    /* Skills Table */
     .skills-container {
       display: grid;
       grid-template-columns: 1fr;
@@ -67,6 +291,7 @@
       border-radius: 14px;
       padding: 1px;
       box-shadow: var(--shadow-2);
+      position: relative;
     }
     
     .skills-table-wrapper::before {
@@ -122,7 +347,7 @@
 
 <body>
   <main>
-    <aside class="sidebar" data-sidebar>
+    <aside class="sidebar active" data-sidebar>
       <div class="sidebar-info">
         <figure class="avatar-box">
           <img src="./assets/images/my-avatar.png" alt="Elior Abaev" width="80">
@@ -133,11 +358,6 @@
           <p class="title">Full Stack Developer</p>
           <p class="title">Assistant Product Manager</p>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
       </div>
 
       <div class="sidebar-info_more">
@@ -190,76 +410,202 @@
       <!-- ABOUT -->
       <article class="about active" data-page="about">
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">About Me</h2>
         </header>
 
         <section class="about-text">
-          <p>I'm an Assistant Product Manager and Full Stack Developer who grew a platform from 900K to 3M users while generating 1M ILS in incremental monthly revenue. I combine deep technical expertise (B.Sc. Computer Science, full-stack development) with proven product leadership to deliver measurable business outcomes at scale.</p>
+          <p>
+            I'm a <strong>Full Stack Developer and Assistant Product Manager</strong> with a proven track record of transforming ambitious ideas into measurable business outcomes. My journey combines deep technical expertise with strategic product leadership, enabling me to bridge the critical gap between business objectives and technical implementation.
+          </p>
 
-          <p>My unique background spans operations, product management, and hands-on development, giving me a 360-degree understanding of how to build products that truly matter. Whether leading product strategy, coordinating cross-functional teams, or developing high-performance e-commerce systems, I bridge the gap between business objectives and technical implementation to create solutions that drive real impact.</p>
+          <p>
+            With a <strong>B.Sc. in Computer Science (GPA: 89, Excellence Scholarship)</strong> and hands-on experience across the entire product lifecycle, I've demonstrated the ability to scale platforms, drive revenue growth, and lead cross-functional teams through complex technical challenges. My unique background, spanning operations, product management, and full-stack development, gives me a 360-degree understanding of what it takes to build products that truly matter.
+          </p>
+
+          <p>
+            Currently pursuing my <strong>M.Sc. in Technology Management</strong>, I'm positioning myself at the intersection of technical excellence and strategic leadership, preparing for product leadership roles where I can drive meaningful impact at scale.
+          </p>
         </section>
 
+        <!-- Key Achievements -->
+        <div class="achievements-section">
+          <h3 class="achievements-title">
+            <ion-icon name="trophy-outline"></ion-icon>
+            Key Achievements
+          </h3>
+          <div class="achievements-grid">
+            <div class="achievement-card">
+              <div class="achievement-number">900,000 → 3,000,000</div>
+              <div class="achievement-label">Monthly users growth on e-commerce platform</div>
+            </div>
+            <div class="achievement-card">
+              <div class="achievement-number">₪1,000,000</div>
+              <div class="achievement-label">Incremental monthly revenue from recommendation engine</div>
+            </div>
+            <div class="achievement-card">
+              <div class="achievement-number">3.3x</div>
+              <div class="achievement-label">Revenue multiplier - ₪300,000 to ₪1,000,000 daily sales</div>
+            </div>
+            <div class="achievement-card">
+              <div class="achievement-number">90%</div>
+              <div class="achievement-label">Time savings with AI-powered content generation</div>
+            </div>
+            <div class="achievement-card">
+              <div class="achievement-number">150%</div>
+              <div class="achievement-label">Performance improvement through infrastructure optimization</div>
+            </div>
+            <div class="achievement-card">
+              <div class="achievement-number">71%</div>
+              <div class="achievement-label">Cost reduction via CloudFlare optimization</div>
+            </div>
+            <div class="achievement-card">
+              <div class="achievement-number">40%</div>
+              <div class="achievement-label">Reduction in production defects through QA team management</div>
+            </div>
+            <div class="achievement-card">
+              <div class="achievement-number">250%</div>
+              <div class="achievement-label">Telegram community growth (40,000 → 140,000+ followers)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- My Journey -->
+        <div class="journey-section">
+          <h3 class="journey-title">
+            <ion-icon name="trending-up-outline"></ion-icon>
+            My Journey
+          </h3>
+
+          <div class="journey-card">
+            <div class="journey-phase">Phase 1: Operations Foundation (2020-2022)</div>
+            <div class="journey-content">
+              <h4>Technology Department Manager - Electra Consumer</h4>
+              <p>
+                Built foundational business acumen and customer empathy by managing retail technology operations at branch level. Drove <strong>200%+ sales increase</strong>. This hands-on experience gave me invaluable insights into customer pain points, operational constraints, and the real-world impact of product decisions, something most PMs never experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="journey-card">
+            <div class="journey-phase">Phase 2: Product Leadership (2022-2024)</div>
+            <div class="journey-content">
+              <h4>Assistant Product Manager - Electra Consumer</h4>
+              <p>
+                Transitioned from branch operations to corporate product strategy, leading digital platform initiatives for a nationwide e-commerce business serving <strong>3M+ monthly visitors</strong>. Led end-to-end product roadmap, designed and launched a Related Products recommendation engine generating <strong>₪1M in incremental monthly revenue</strong>, and assumed full PM ownership when the primary PM was deployed to military reserves (Oct 2023), managing VP-level stakeholders throughout the 13-month period. Coordinated <strong>1,500+ product development tasks</strong> across external partners without direct authority, demonstrating exceptional influence and leadership skills.
+              </p>
+            </div>
+          </div>
+
+          <div class="journey-card">
+            <div class="journey-phase">Phase 3: Technical Excellence (2024-Present)</div>
+            <div class="journey-content">
+              <h4>Full Stack Developer (Product-Focused) - Electra Consumer</h4>
+              <p>
+                Promoted to lead technical development while maintaining product strategy responsibilities. Managed QA team across <strong>100+ feature releases</strong>, reducing production defects by 40%. Led major platform migration from Magento Luma to Hyva Theme (AlpineJS/TailwindCSS) and achieved <strong>150% performance improvement with 71% cost reduction</strong>. This role deepened my technical expertise while proving I can drive product outcomes from both strategic and implementation perspectives.
+              </p>
+            </div>
+          </div>
+
+          <div class="journey-card">
+            <div class="journey-phase">Phase 4: Entrepreneurship (2025-Present)</div>
+            <div class="journey-content">
+              <h4>Founder & Product Manager - Katalyst AI</h4>
+              <p>
+                Led complete zero-to-one product development for AI-powered content generation platform. Identified market pain point (20+ minutes per product listing), designed 3-step workflow, and achieved <strong>90%+ time savings</strong> with pilot customers. Built intelligent data extraction, natural Hebrew localization, SEO optimization, and one-click Shopify publishing, demonstrating end-to-end product development capabilities from ideation to market validation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Companies & Projects -->
+        <div class="company-showcase">
+          <h3 class="company-showcase-title">
+            <ion-icon name="business-outline"></ion-icon>
+            Companies & Projects
+          </h3>
+          <div class="company-cards-grid">
+            <div class="company-card">
+              <div class="company-card-content">
+                <div class="company-icon">K</div>
+                <h4 class="company-name">Katalyst AI</h4>
+                <p class="company-role">Founder & Product Manager</p>
+                <p class="company-description">
+                  AI-powered product content generator transforming supplier data into revenue-ready Hebrew listings. Reduces product onboarding by 90%.
+                </p>
+                <a href="https://katalyst-ai.com" target="_blank" class="company-link">
+                  Visit Website
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <div class="company-card">
+              <div class="company-card-content">
+                <div class="company-icon">E</div>
+                <h4 class="company-name">Electra Consumer</h4>
+                <p class="company-role">Full Stack Developer & Former PM</p>
+                <p class="company-description">
+                  Major Israeli electronics retailer. Led e-commerce platform serving 3M+ monthly visitors and ₪1M+ daily sales.
+                </p>
+                <a href="http://payngo.co.il/" target="_blank" class="company-link">
+                  Visit Platform
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- What I Do -->
         <section class="service">
-          <h3 class="h3 service-title">What I do</h3>
+          <h3 class="h3 service-title">What I Do</h3>
           <ul class="service-list">
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="product management icon" width="40">
+                <img src="./assets/images/icon-design.svg" alt="product management" width="40">
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Product Management</h4>
-                <p class="service-item-text">Strategic product roadmapping, stakeholder management, and data-driven decision making to scale platforms and drive revenue growth.</p>
+                <p class="service-item-text">
+                  End-to-end product strategy, roadmapping, and execution. Expert in stakeholder management, data-driven decision making, and leading cross-functional teams to deliver measurable business outcomes at scale.
+                </p>
               </div>
             </li>
 
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="development" width="40">
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Full Stack Development</h4>
-                <p class="service-item-text">High-performance e-commerce systems using PHP, JavaScript, React, Python, with expertise in Magento 2 and modern frontend technologies.</p>
+                <p class="service-item-text">
+                  Building high-performance systems with PHP, JavaScript, React, Python. Specialized in Magento 2 and modern e-commerce platforms, with proven ability to deliver 150%+ performance improvements.
+                </p>
               </div>
             </li>
 
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="AI integration icon" width="40">
+                <img src="./assets/images/icon-app.svg" alt="AI integration" width="40">
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">AI Integration</h4>
-                <p class="service-item-text">Building AI-powered solutions that solve real business problems, from content generation systems to intelligent automation.</p>
+                <p class="service-item-text">
+                  Developing AI-powered solutions that solve real business problems. From content generation to intelligent automation, I build systems that deliver 90%+ time savings and tangible ROI.
+                </p>
               </div>
             </li>
 
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="optimization icon" width="40">
+                <img src="./assets/images/icon-photo.svg" alt="optimization" width="40">
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">E-commerce Optimization</h4>
-                <p class="service-item-text">Performance optimization, conversion rate improvements, and infrastructure enhancements that deliver measurable business impact.</p>
+                <p class="service-item-text">
+                  Performance optimization, conversion rate improvements, and infrastructure enhancements. Track record of scaling platforms from 900K to 3M users while increasing revenue by 50%.
+                </p>
               </div>
-            </li>
-          </ul>
-        </section>
-
-        <section class="clients">
-          <h3 class="h3 clients-title">Companies & Projects</h3>
-          <ul class="clients-list has-scrollbar">
-            <li class="clients-item">
-              <a href="https://katalyst-ai.com" target="_blank">
-                <div style="padding: 20px; background: white; border-radius: 10px; text-align: center;">
-                  <h4 style="color: #333; margin: 0;">Katalyst AI</h4>
-                </div>
-              </a>
-            </li>
-            <li class="clients-item">
-              <a href="http://payngo.co.il/" target="_blank">
-                <div style="padding: 20px; background: white; border-radius: 10px; text-align: center;">
-                  <h4 style="color: #333; margin: 0;">Electra Consumer</h4>
-                </div>
-              </a>
             </li>
           </ul>
         </section>
@@ -288,8 +634,8 @@
 
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Bachelor's Degree in Computer Science</h4>
-              <span>2022 - 2025 | GPA: 89</span>
-              <p class="timeline-text">Holon Institute of Technology - Excellence Scholarship Recipient. Strong foundation in algorithms, data structures, software engineering, and full-stack development while working 180-200 hours monthly.</p>
+              <span>2022 - 2025 | GPA: 89 | Excellence Scholarship</span>
+              <p class="timeline-text">Holon Institute of Technology - Strong foundation in algorithms, data structures, software engineering, and full-stack development while working 180-200 hours monthly.</p>
             </li>
           </ol>
         </section>
@@ -318,7 +664,7 @@
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Assistant Product Manager - Electra Consumer</h4>
               <span>Feb 2022 - Nov 2024</span>
-              <p class="timeline-text">Led end-to-end product roadmap driving platform from 900K to 3M monthly visitors and ILS 300K-500K to ILS 1M in daily sales (50% revenue growth). Designed Related Products recommendation engine generating ILS 1M incremental monthly revenue. Assumed full PM ownership during military reserves deployment, managing VP-level stakeholders.</p>
+              <p class="timeline-text">Led end-to-end product roadmap driving platform from 900K to 3M monthly visitors and ₪300K-₪500K to ₪1M in daily sales (50% revenue growth). Designed Related Products recommendation engine generating ₪1M incremental monthly revenue. Assumed full PM ownership during military reserves deployment, managing VP-level stakeholders.</p>
             </li>
           </ol>
         </section>
@@ -327,8 +673,6 @@
           <h3 class="h3 skills-title">Skills & Expertise</h3>
           
           <div class="skills-container">
-            
-            <!-- Product Management Skills -->
             <div class="skills-table-wrapper">
               <h4 class="skills-table-title">
                 <ion-icon name="briefcase-outline"></ion-icon>
@@ -347,7 +691,6 @@
               </table>
             </div>
 
-            <!-- Programming Languages -->
             <div class="skills-table-wrapper">
               <h4 class="skills-table-title">
                 <ion-icon name="code-slash-outline"></ion-icon>
@@ -364,7 +707,6 @@
               </table>
             </div>
 
-            <!-- Frameworks & Libraries -->
             <div class="skills-table-wrapper">
               <h4 class="skills-table-title">
                 <ion-icon name="construct-outline"></ion-icon>
@@ -381,7 +723,6 @@
               </table>
             </div>
 
-            <!-- E-commerce & Platforms -->
             <div class="skills-table-wrapper">
               <h4 class="skills-table-title">
                 <ion-icon name="storefront-outline"></ion-icon>
@@ -398,7 +739,6 @@
               </table>
             </div>
 
-            <!-- DevOps & Cloud -->
             <div class="skills-table-wrapper">
               <h4 class="skills-table-title">
                 <ion-icon name="cloud-outline"></ion-icon>
@@ -415,7 +755,6 @@
               </table>
             </div>
 
-            <!-- AI & Machine Learning -->
             <div class="skills-table-wrapper">
               <h4 class="skills-table-title">
                 <ion-icon name="bulb-outline"></ion-icon>
@@ -432,7 +771,6 @@
               </table>
             </div>
 
-            <!-- Tools & Analytics -->
             <div class="skills-table-wrapper">
               <h4 class="skills-table-title">
                 <ion-icon name="analytics-outline"></ion-icon>
@@ -449,7 +787,6 @@
               </table>
             </div>
 
-            <!-- Soft Skills -->
             <div class="skills-table-wrapper">
               <h4 class="skills-table-title">
                 <ion-icon name="people-outline"></ion-icon>
@@ -465,7 +802,6 @@
                 </tbody>
               </table>
             </div>
-
           </div>
         </section>
       </article>
@@ -520,9 +856,6 @@
             <li class="project-item active" data-filter-item data-category="ai & ml">
               <a href="https://katalyst-ai.com" target="_blank">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
                   <img src="./assets/images/katalyst-ai.png" alt="Katalyst AI" loading="lazy">
                 </figure>
                 <h3 class="project-title">Katalyst AI</h3>
@@ -533,10 +866,7 @@
             <li class="project-item active" data-filter-item data-category="full stack">
               <a href="https://github.com/EASS-HIT-PART-A-2024-CLASS-VI/budget-app-eliorabaev" target="_blank">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/budget-app.png" alt="Budget Management Application" loading="lazy">
+                  <img src="./assets/images/budget-app.png" alt="Budget App" loading="lazy">
                 </figure>
                 <h3 class="project-title">Budget Management Application</h3>
                 <p class="project-category">Full Stack • AI Integration</p>
@@ -546,10 +876,7 @@
             <li class="project-item active" data-filter-item data-category="security">
               <a href="https://github.com/eliorabaev/CyberSecurity" target="_blank">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/CyberSecurity.png" alt="Secure ISP Management Platform" loading="lazy">
+                  <img src="./assets/images/CyberSecurity.png" alt="ISP Platform" loading="lazy">
                 </figure>
                 <h3 class="project-title">Secure ISP Management Platform</h3>
                 <p class="project-category">Security • Full Stack</p>
@@ -559,10 +886,7 @@
             <li class="project-item active" data-filter-item data-category="devops">
               <a href="https://github.com/eliorabaev/DevopsFinal" target="_blank">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/url-shortener.png" alt="Production URL Shortener" loading="lazy">
+                  <img src="./assets/images/url-shortener.png" alt="URL Shortener" loading="lazy">
                 </figure>
                 <h3 class="project-title">Production URL Shortener</h3>
                 <p class="project-category">DevOps • Full Stack</p>
@@ -572,10 +896,7 @@
             <li class="project-item active" data-filter-item data-category="ai & ml">
               <a href="https://github.com/eliorabaev/machine-learning" target="_blank">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/ml-wine.png" alt="Wine Classification ML" loading="lazy">
+                  <img src="./assets/images/ml-wine.png" alt="Wine ML" loading="lazy">
                 </figure>
                 <h3 class="project-title">Wine Classification ML</h3>
                 <p class="project-category">AI & ML</p>
@@ -585,10 +906,7 @@
             <li class="project-item active" data-filter-item data-category="product">
               <a href="http://payngo.co.il/" target="_blank">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/electra-ecommerce.jpg" alt="Electra E-commerce Platform" loading="lazy">
+                  <img src="./assets/images/electra-ecommerce.jpg" alt="Electra Platform" loading="lazy">
                 </figure>
                 <h3 class="project-title">Electra E-commerce Platform</h3>
                 <p class="project-category">Product Management • Development</p>
@@ -606,25 +924,21 @@
   <script>
     'use strict';
 
-    // element toggle function
     const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
-    // Email copy to clipboard functionality
+    // Email copy functionality
     const emailCopyButtons = document.querySelectorAll('.email-copy-btn');
     emailCopyButtons.forEach(function(emailBtn) {
       emailBtn.addEventListener('click', function(e) {
         e.preventDefault();
         const email = this.dataset.email;
         
-        // Copy to clipboard
         navigator.clipboard.writeText(email).then(function() {
-          // Show notification
           const notification = document.createElement('div');
           notification.className = 'copy-notification';
           notification.textContent = 'Email copied to clipboard!';
           document.body.appendChild(notification);
           
-          // Remove notification after 2 seconds
           setTimeout(function() {
             notification.style.animation = 'slideIn 0.3s ease-out reverse';
             setTimeout(function() {
@@ -637,20 +951,17 @@
       });
     });
 
-    // sidebar variables
+    // Sidebar toggle
     const sidebar = document.querySelector("[data-sidebar]");
     const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-
-    // sidebar toggle functionality for mobile
     if (sidebarBtn) {
       sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
     }
 
-    // page navigation variables
+    // Navigation
     const navigationLinks = document.querySelectorAll("[data-nav-link]");
     const pages = document.querySelectorAll("[data-page]");
 
-    // add event to all nav link
     for (let i = 0; i < navigationLinks.length; i++) {
       navigationLinks[i].addEventListener("click", function () {
         for (let j = 0; j < pages.length; j++) {
@@ -666,7 +977,7 @@
       });
     }
 
-    // filter variables
+    // Portfolio filter
     const filterBtn = document.querySelectorAll("[data-filter-btn]");
     const filterItems = document.querySelectorAll("[data-filter-item]");
 
@@ -682,7 +993,6 @@
       }
     }
 
-    // add event in all filter button items for large screen
     let lastClickedBtn = filterBtn[0];
 
     for (let i = 0; i < filterBtn.length; i++) {
@@ -696,7 +1006,7 @@
       });
     }
 
-    // custom select for mobile
+    // Mobile select
     const select = document.querySelector("[data-select]");
     const selectItems = document.querySelectorAll("[data-select-item]");
     const selectValue = document.querySelector("[data-selecct-value]");
@@ -705,7 +1015,6 @@
       select.addEventListener("click", function () { elementToggleFunc(this); });
     }
 
-    // add event in all select items
     for (let i = 0; i < selectItems.length; i++) {
       selectItems[i].addEventListener("click", function () {
         let selectedValue = this.innerText.toLowerCase();
@@ -715,12 +1024,11 @@
       });
     }
 
-    // contact form variables
+    // Contact form
     const form = document.querySelector("[data-form]");
     const formInputs = document.querySelectorAll("[data-form-input]");
     const formBtn = document.querySelector("[data-form-btn]");
 
-    // add event to all form input field
     if (form) {
       for (let i = 0; i < formInputs.length; i++) {
         formInputs[i].addEventListener("input", function () {
