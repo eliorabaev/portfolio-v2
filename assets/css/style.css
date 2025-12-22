@@ -507,6 +507,12 @@ main {
 }
 
 .about-text p { margin-bottom: 15px; }
+.about-text a {
+  display: inline;
+  color: var(--orange-yellow-crayola);
+  font-weight: var(--fw-500);
+  text-decoration: underline;
+}
 
 
 
