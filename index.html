@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elior Abaev - Assistant Product Manager & Full Stack Developer</title>
+  <title>Elior Abaev - Full Stack Developer & Technical Product Manager</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -347,6 +347,146 @@
       font-size: var(--fs-6);
       font-weight: var(--fw-400);
     }
+
+    /* Impact Highlights */
+    .impact-section {
+      margin: 30px 0;
+    }
+
+    .impact-title {
+      margin-bottom: 15px;
+    }
+
+    .impact-lead {
+      color: var(--light-gray);
+      font-size: var(--fs-6);
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    .impact-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .impact-card {
+      background: var(--border-gradient-onyx);
+      border-radius: 16px;
+      padding: 1px;
+      box-shadow: var(--shadow-2);
+    }
+
+    .impact-card-inner {
+      background: var(--bg-gradient-jet);
+      border-radius: 15px;
+      padding: 18px 20px;
+    }
+
+    .impact-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .impact-card-title {
+      color: var(--white-2);
+      font-size: var(--fs-4);
+      font-weight: var(--fw-600);
+    }
+
+    .impact-tag {
+      color: var(--orange-yellow-crayola);
+      font-size: var(--fs-8);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: 1px solid var(--jet);
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: var(--eerie-black-1);
+    }
+
+    .impact-list {
+      display: grid;
+      gap: 8px;
+      color: var(--light-gray);
+      font-size: var(--fs-6);
+      line-height: 1.6;
+    }
+
+    .impact-list li {
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .impact-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--orange-yellow-crayola);
+    }
+
+    /* Case Studies */
+    .case-studies {
+      margin-bottom: 30px;
+    }
+
+    .case-studies-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .case-study-card {
+      background: var(--border-gradient-onyx);
+      border-radius: 16px;
+      padding: 1px;
+      box-shadow: var(--shadow-2);
+    }
+
+    .case-study-card-inner {
+      background: var(--bg-gradient-jet);
+      border-radius: 15px;
+      padding: 20px;
+    }
+
+    .case-study-meta {
+      color: var(--orange-yellow-crayola);
+      font-size: var(--fs-7);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .case-study-title {
+      color: var(--white-2);
+      font-size: var(--fs-4);
+      margin-bottom: 12px;
+    }
+
+    .case-study-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .case-study-item {
+      color: var(--light-gray);
+      font-size: var(--fs-6);
+      line-height: 1.6;
+    }
+
+    .case-study-item strong {
+      color: var(--white-2);
+      font-weight: var(--fw-600);
+    }
+
+    /* Project Card Detail */
+    .project-description {
+      color: var(--light-gray);
+      font-size: var(--fs-7);
+      line-height: 1.5;
+      margin: 8px 0 0 10px;
+    }
   </style>
 </head>
 
@@ -360,8 +500,9 @@
 
         <div class="info-content">
           <h1 class="name" title="Elior Abaev">Elior Abaev</h1>
+          <p class="title">Technical Product Manager</p>
           <p class="title">Full Stack Developer</p>
-          <p class="title">Assistant Product Manager</p>
+          <p class="title">Founder of Katalyst</p>
         </div>
       </div>
 
@@ -420,15 +561,19 @@
 
         <section class="about-text">
           <p>
-            I'm a <strong>product-focused full stack builder</strong> who architects AI systems and ships them end-to-end. I don't just prompt models; I design real workflows that solve real problems, from ingestion and orchestration to human review and automated export.
+            I am a <strong>Technical Product Manager</strong> who doesn’t just write requirements, I validate them in the code.
           </p>
 
           <p>
-            I’m comfortable working with <strong>APIs and webhooks</strong>, and I know how to chain models and tools together to achieve a specific outcome. That’s how I built <a href="https://katalyst-ai.com/" target="_blank">Katalyst AI</a> (Hebrew product data platform) and a Budget App that uses microservices and Gemini-powered financial insights.
+            My journey is unique: I started in operations, moved into Product Management for a 3M+ visitor e-commerce platform, then intentionally transitioned into full stack development to master the technical reality of what I was building.
           </p>
 
           <p>
-            My background spans operations, product management, and full-stack development, so I can visualize the architecture behind a creative goal and then build it myself. I’m currently pursuing an <strong>M.Sc. in Technology Management</strong> while continuing to deliver measurable impact at scale.
+            What I bring to the table: technical empathy from rewriting legacy Magento components into modern Hyva (Alpine.js/Tailwind) stacks, zero-to-one execution as the founder of Katalyst AI (90%+ time savings for product onboarding), and data-driven triage that balances technical debt with revenue protection.
+          </p>
+
+          <p>
+            I am looking for a product role where I can de-risk roadmaps, earn developer trust, and ship products that actually work. I’m currently pursuing an <strong>M.Sc. in Technology Management</strong> while continuing to deliver measurable impact at scale.
           </p>
         </section>
 
@@ -474,6 +619,70 @@
           </div>
         </div>
 
+        <section class="impact-section">
+          <h3 class="h3 impact-title">Selected Release Highlights</h3>
+          <p class="impact-lead">
+            A focused selection of releases that reflect both technical ownership and product outcomes across a 3M+ monthly visitor platform.
+          </p>
+          <div class="impact-grid">
+            <div class="impact-card">
+              <div class="impact-card-inner">
+                <div class="impact-card-header">
+                  <h4 class="impact-card-title">Accessibility and Navigation</h4>
+                  <span class="impact-tag">UX Quality</span>
+                </div>
+                <ul class="impact-list">
+                  <li>Improved mega-menu keyboard navigation and focus states for screen reader compliance.</li>
+                  <li>Standardized ARIA labeling across brand logos, tooltips, and interactive icons.</li>
+                  <li>Resolved SVG title accessibility issues and enforced semantic roles.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="impact-card">
+              <div class="impact-card-inner">
+                <div class="impact-card-header">
+                  <h4 class="impact-card-title">Product Page Experience</h4>
+                  <span class="impact-tag">PDP</span>
+                </div>
+                <ul class="impact-list">
+                  <li>Redesigned PDP layouts with sticky CTAs, package modules, and spacing polish.</li>
+                  <li>Made embedded media responsive and stabilized FlixMedia/read-more flows.</li>
+                  <li>Delivered mobile and tablet UX refinements to reduce friction at decision points.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="impact-card">
+              <div class="impact-card-inner">
+                <div class="impact-card-header">
+                  <h4 class="impact-card-title">Checkout and Cart Reliability</h4>
+                  <span class="impact-tag">Conversion</span>
+                </div>
+                <ul class="impact-list">
+                  <li>Resolved add-to-cart conflicts and shipping validation messaging defects.</li>
+                  <li>Fixed z-index and overlay collisions between minicart and mega-menu.</li>
+                  <li>Improved order search and contact page error handling.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="impact-card">
+              <div class="impact-card-inner">
+                <div class="impact-card-header">
+                  <h4 class="impact-card-title">Merchandising and Content Modules</h4>
+                  <span class="impact-tag">Discovery</span>
+                </div>
+                <ul class="impact-list">
+                  <li>Upgraded related products and blog widgets with modern Hyva components.</li>
+                  <li>Delivered expert review support and product label modules.</li>
+                  <li>Stabilized carousel initialization and added product grid search controls.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- My Journey -->
         <div class="journey-section">
           <h3 class="journey-title">
@@ -482,21 +691,21 @@
           </h3>
 
           <div class="journey-card">
-            <div class="journey-phase">Phase 1: Retail Foundation (2018-2020)</div>
+            <div class="journey-phase">Phase 1: Customer-First Foundation (2018-2020)</div>
             <div class="journey-content">
               <h4>Sales Associate & Technology Specialist - Office Depot</h4>
               <p>
-                Started from the ground up, working the sales floor, helping customers choose products, and solving technical problems in real-time. This was where I learned to translate complex technical features into customer benefits, handle objections, and understand what drives purchasing decisions. Built the foundation for customer-centric thinking that shapes every product decision I make today.
+                Started on the floor, helping customers choose the right product and troubleshooting in real time. This is where I learned to translate technical detail into clear value, handle objections, and understand why people buy. That customer lens still shapes every product decision I make.
               </p>
             </div>
           </div>
 
           <div class="journey-card">
-            <div class="journey-phase">Phase 2: Operations & Business Acumen (2020-2022)</div>
+            <div class="journey-phase">Phase 2: Operations and Business Acumen (2020-2022)</div>
             <div class="journey-content">
               <h4>Technology Department Manager - Electra Consumer</h4>
               <p>
-                Managed branch-level retail technology operations while working directly with customers daily. Drove <strong>200%+ year-over-year sales growth</strong> by deeply understanding customer needs, identifying sales opportunities, and optimizing department operations. Handled everything from customer consultations to inventory management to team coordination. This hands-on experience gave me invaluable insights into operational constraints, customer pain points, and the real-world impact of business decisions, perspective most PMs never develop.
+                Managed branch-level retail technology operations while working with customers daily. Drove <strong>200%+ year-over-year sales growth</strong> by spotting needs early, improving operations, and coaching teams to execute consistently. This hands-on role taught me operational reality, a perspective that helps me build practical roadmaps.
               </p>
             </div>
           </div>
@@ -506,27 +715,27 @@
             <div class="journey-content">
               <h4>Assistant Product Manager - Electra Consumer</h4>
               <p>
-                Transitioned from branch operations to corporate product strategy, leading digital platform initiatives for a nationwide e-commerce business serving <strong>3M+ monthly visitors</strong>. Led end-to-end product roadmap, designed and launched a Related Products recommendation engine generating <strong>₪1M in incremental monthly revenue</strong>, and assumed full PM ownership when the primary PM was deployed to military reserves (Oct 2023), managing VP-level stakeholders throughout the 13-month period. Coordinated <strong>1,500+ product development tasks</strong> across external partners (Betanet, Jellyfish) without direct authority, demonstrating exceptional influence and cross-functional leadership.
+                Moved from operations to corporate product strategy for a nationwide e-commerce business serving <strong>3M+ monthly visitors</strong>. Led roadmap planning, launched a Related Products engine that generated <strong>₪1M in incremental monthly revenue</strong>, and assumed full PM ownership during a 13-month executive gap. Coordinated <strong>1,500+ product development tasks</strong> across external partners without direct authority.
               </p>
             </div>
           </div>
 
           <div class="journey-card">
-            <div class="journey-phase">Phase 4: Technical Excellence (2024-Present)</div>
+            <div class="journey-phase">Phase 4: Product-Focused Engineering (2024-Present)</div>
             <div class="journey-content">
               <h4>Full Stack Developer (Product-Focused) - Electra Consumer</h4>
               <p>
-                Promoted to lead technical development while maintaining product strategy responsibilities. Managed QA team across <strong>100+ feature releases</strong>, reducing production defects by 40%. Led major platform migration from Magento Luma to Hyva Theme (AlpineJS/TailwindCSS) in collaboration with StudioRaz and achieved <strong>150% performance improvement with 71% cost reduction</strong> through CloudFlare optimization. This role deepened my technical expertise while proving I can drive product outcomes from both strategic and hands-on implementation perspectives.
+                Promoted to lead technical delivery while keeping product strategy in scope. Managed QA across <strong>100+ releases</strong>, reducing production defects by 40%. Led the Magento Luma to Hyva migration and achieved <strong>150% performance improvement with 71% cost reduction</strong> via CloudFlare optimization. I now ship the work I once only planned.
               </p>
             </div>
           </div>
 
           <div class="journey-card">
-            <div class="journey-phase">Phase 5: Entrepreneurship & Innovation (2025-Present)</div>
+            <div class="journey-phase">Phase 5: Entrepreneurship and Innovation (2025-Present)</div>
             <div class="journey-content">
               <h4>Founder & Product Manager - Katalyst AI</h4>
               <p>
-                Led complete zero-to-one product development for AI-powered content generation platform. Identified market pain point through firsthand e-commerce experience (20+ minutes per product listing), designed intuitive 3-step workflow, and validated with pilot customers achieving <strong>90%+ time savings</strong>. Built end-to-end solution featuring intelligent data extraction from unstructured sources, natural Hebrew localization preserving technical terms, automated SEO optimization, and one-click Shopify publishing. Demonstrates ability to identify real market needs, build technical solutions, and validate product-market fit.
+                Built a zero-to-one AI platform for e-commerce content. Identified a 20+ minute product listing bottleneck, designed a 3-step flow, and validated it with pilots achieving <strong>90%+ time savings</strong>. Delivered extraction, Hebrew localization, SEO optimization, and Shopify publishing in one system.
               </p>
             </div>
           </div>
@@ -626,6 +835,7 @@
             
           </ul>
         </section>
+
       </article>
 
       <!-- RESUME -->
@@ -675,13 +885,17 @@
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Full Stack Developer (Product-Focused) - Electra Consumer</h4>
               <span>Nov 2024 - Present</span>
-              <p class="timeline-text">Promoted from Assistant Product Manager to lead technical development while maintaining product strategy for platform serving 3M+ monthly visitors. Managed QA team across 100+ releases, reducing production defects by 40%. Led Magento Luma to Hyva Theme migration and achieved 150% performance improvement with 71% cost reduction.</p>
+              <p class="timeline-text">Full stack developer for high-scale e-commerce platforms serving <strong>3M+ monthly visitors</strong>, bridging complex engineering and product strategy.</p>
+              <p class="timeline-text"><strong>Key achievements:</strong> Built a Call Center & CRM module integrated with Tafnit ERP for real-time order tracking; co-developed the frontend migration from Luma to Hyva by rewriting mega-menu and checkout success components in Alpine.js/Tailwind with WCAG 2.1 accessibility, contributing to a <strong>150% performance lift</strong>; implemented OTP rate limiting and accessibility upgrades; contributed to cloud optimizations delivering <strong>71% cost reduction</strong>.</p>
+              <p class="timeline-text"><strong>Tech stack:</strong> PHP, Magento 2, React.js, Node.js, Alpine.js, Tailwind CSS, Redis, AWS, Docker, SQL.</p>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Assistant Product Manager - Electra Consumer</h4>
+              <h4 class="h4 timeline-item-title">Technical Product Manager - Electra Consumer</h4>
               <span>Feb 2022 - Nov 2024</span>
-              <p class="timeline-text">Led end-to-end product roadmap driving platform from 900K to 3M monthly visitors and ₪300K-₪500K to ₪1M in daily sales (50% revenue growth). Designed Related Products recommendation engine generating ₪1M incremental monthly revenue. Assumed full PM ownership during military reserves deployment, managing VP-level stakeholders.</p>
+              <p class="timeline-text">Bridged business stakeholders and engineering while managing a backlog of <strong>300+ tickets</strong> to ensure high-quality delivery.</p>
+              <p class="timeline-text"><strong>Key achievements:</strong> Defined requirements and managed delivery of the Branches Page feature with external developers; created and prioritized 300+ Jira stories/tasks/bugs; led UX improvements across mobile checkout, search & filter, and PDP layouts; owned UAT for frontend releases and cross-browser fixes; identified Core Web Vitals bottlenecks in PageBuilder sliders and drove remediation; prioritized critical revenue blockers like payment and VAT errors.</p>
+              <p class="timeline-text"><strong>Tools & tech:</strong> Jira, Confluence, Google Analytics, A/B Testing, React.js, Node.js, Python, PHP (Magento 2), SQL, AWS, Docker, CI/CD, Redis.</p>
             </li>
           </ol>
         </section>
@@ -704,6 +918,38 @@
                   <tr><td>Cross-Functional Leadership</td></tr>
                   <tr><td>Agile/Scrum Methodologies</td></tr>
                   <tr><td>A/B Testing & Experimentation</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="skills-table-wrapper">
+              <h4 class="skills-table-title">
+                <ion-icon name="analytics-outline"></ion-icon>
+                Tools & Analytics
+              </h4>
+              <table class="skills-table">
+                <tbody>
+                  <tr><td>Jira & Confluence</td></tr>
+                  <tr><td>Google Analytics</td></tr>
+                  <tr><td>Hotjar & Adoric</td></tr>
+                  <tr><td>Figma</td></tr>
+                  <tr><td>Prometheus & Grafana</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="skills-table-wrapper">
+              <h4 class="skills-table-title">
+                <ion-icon name="people-outline"></ion-icon>
+                Leadership & Soft Skills
+              </h4>
+              <table class="skills-table">
+                <tbody>
+                  <tr><td>Strategic Thinking</td></tr>
+                  <tr><td>Communication</td></tr>
+                  <tr><td>Problem Solving</td></tr>
+                  <tr><td>Team Collaboration</td></tr>
+                  <tr><td>Influence Without Authority</td></tr>
                 </tbody>
               </table>
             </div>
@@ -787,38 +1033,6 @@
                 </tbody>
               </table>
             </div>
-
-            <div class="skills-table-wrapper">
-              <h4 class="skills-table-title">
-                <ion-icon name="analytics-outline"></ion-icon>
-                Tools & Analytics
-              </h4>
-              <table class="skills-table">
-                <tbody>
-                  <tr><td>Jira & Confluence</td></tr>
-                  <tr><td>Google Analytics</td></tr>
-                  <tr><td>Hotjar & Adoric</td></tr>
-                  <tr><td>Figma</td></tr>
-                  <tr><td>Prometheus & Grafana</td></tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div class="skills-table-wrapper">
-              <h4 class="skills-table-title">
-                <ion-icon name="people-outline"></ion-icon>
-                Leadership & Soft Skills
-              </h4>
-              <table class="skills-table">
-                <tbody>
-                  <tr><td>Strategic Thinking</td></tr>
-                  <tr><td>Communication</td></tr>
-                  <tr><td>Problem Solving</td></tr>
-                  <tr><td>Team Collaboration</td></tr>
-                  <tr><td>Influence Without Authority</td></tr>
-                </tbody>
-              </table>
-            </div>
           </div>
         </section>
       </article>
@@ -828,6 +1042,71 @@
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
+
+        <section class="case-studies">
+          <h3 class="h3">Case Studies</h3>
+          <div class="case-studies-grid">
+            <div class="case-study-card">
+              <div class="case-study-card-inner">
+                <div class="case-study-meta">E-commerce Platform</div>
+                <h4 class="case-study-title">PDP UX Overhaul and Mobile Stability</h4>
+                <div class="case-study-list">
+                  <div class="case-study-item"><strong>Goal:</strong> Modernize product pages, reduce friction, and make media and layout responsive across devices.</div>
+                  <div class="case-study-item"><strong>Role:</strong> Technical PM and full stack developer driving specs, UX iterations, and Hyva implementation.</div>
+                  <div class="case-study-item"><strong>Results:</strong> Shipped redesigned PDP layout with sticky CTAs, responsive iframes, read-more UX, and stable carousel initialization.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-study-card">
+              <div class="case-study-card-inner">
+                <div class="case-study-meta">Accessibility</div>
+                <h4 class="case-study-title">Navigation and Component Accessibility</h4>
+                <div class="case-study-list">
+                  <div class="case-study-item"><strong>Goal:</strong> Improve keyboard navigation and screen reader compatibility across key UI components.</div>
+                  <div class="case-study-item"><strong>Role:</strong> Implemented accessibility fixes and validated usability with keyboard-only flows.</div>
+                  <div class="case-study-item"><strong>Results:</strong> Added ARIA labels, focusable controls, and accessible mega-menu behavior across product and header components.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-study-card">
+              <div class="case-study-card-inner">
+                <div class="case-study-meta">Checkout Reliability</div>
+                <h4 class="case-study-title">Cart and Checkout Error Reduction</h4>
+                <div class="case-study-list">
+                  <div class="case-study-item"><strong>Goal:</strong> Reduce cart and shipping errors while keeping related products logic accurate.</div>
+                  <div class="case-study-item"><strong>Role:</strong> Owned Jira triage, wrote requirements, and delivered fixes across frontend and backend.</div>
+                  <div class="case-study-item"><strong>Results:</strong> Resolved add-to-cart replacement issues, shipping validation copy, z-index conflicts, and related-products misconfiguration.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-study-card">
+              <div class="case-study-card-inner">
+                <div class="case-study-meta">Merchandising</div>
+                <h4 class="case-study-title">Content and Product Discovery Upgrades</h4>
+                <div class="case-study-list">
+                  <div class="case-study-item"><strong>Goal:</strong> Improve content modules and product discovery tools across the storefront.</div>
+                  <div class="case-study-item"><strong>Role:</strong> Led module upgrades, UI redesigns, and deployment validation.</div>
+                  <div class="case-study-item"><strong>Results:</strong> Modernized blog widgets, added expert review fields, upgraded related products, and delivered product grid search controls.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-study-card">
+              <div class="case-study-card-inner">
+                <div class="case-study-meta">Case Study</div>
+                <h4 class="case-study-title">Branches Page Delivery</h4>
+                <div class="case-study-list">
+                  <div class="case-study-item"><strong>Goal:</strong> Make store information easy to find for customers.</div>
+                  <div class="case-study-item"><strong>Role:</strong> Product manager who wrote specs, coordinated with external developers, and validated QA.</div>
+                  <div class="case-study-item"><strong>Results:</strong> Feature shipped on time with clear UX and acceptance criteria met.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section class="projects">
           <ul class="filter-list">
@@ -877,6 +1156,8 @@
                 </figure>
                 <h3 class="project-title">Katalyst AI</h3>
                 <p class="project-category">AI Systems • Agents • Product</p>
+                <p class="project-description">Identified a Hebrew e-commerce content bottleneck and built an AI workflow that cuts listing time by 90% through extraction, localization, and publishing automation.</p>
+                <span class="project-cta">View Site</span>
               </a>
             </li>
 
@@ -887,6 +1168,8 @@
                 </figure>
                 <h3 class="project-title">Budget Management Application</h3>
                 <p class="project-category">Microservices • LLM • Full Stack</p>
+                <p class="project-description">Budgeting platform with microservices architecture and Gemini-powered insights for personal finance decisions.</p>
+                <span class="project-cta">View Project</span>
               </a>
             </li>
 
@@ -897,6 +1180,8 @@
                 </figure>
                 <h3 class="project-title">Secure ISP Management Platform</h3>
                 <p class="project-category">Security • Full Stack</p>
+                <p class="project-description">Security-first ISP management portal built for secure operations and audit-ready workflows.</p>
+                <span class="project-cta">View Project</span>
               </a>
             </li>
 
@@ -907,6 +1192,8 @@
                 </figure>
                 <h3 class="project-title">Production URL Shortener</h3>
                 <p class="project-category">DevOps • Full Stack</p>
+                <p class="project-description">Production URL shortener with containerized services, CI/CD, and deployment automation.</p>
+                <span class="project-cta">View Project</span>
               </a>
             </li>
 
@@ -917,6 +1204,8 @@
                 </figure>
                 <h3 class="project-title">Wine Classification ML</h3>
                 <p class="project-category">AI & ML</p>
+                <p class="project-description">Machine learning pipeline for classifying wine types from lab data with evaluated model comparisons.</p>
+                <span class="project-cta">View Project</span>
               </a>
             </li>
 
@@ -927,6 +1216,8 @@
                 </figure>
                 <h3 class="project-title">Electra E-commerce Platform</h3>
                 <p class="project-category">Product Management • Development</p>
+                <p class="project-description">Frontend engineering for the Hyva migration with Alpine.js/Tailwind and WCAG accessibility, improving speed and UX at scale.</p>
+                <span class="project-cta">View Site</span>
               </a>
             </li>
           </ul>
